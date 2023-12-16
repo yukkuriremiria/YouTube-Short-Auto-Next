@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Short Auto Next",
+    "version": "1.0",
+    "description": "なんか自動で進むやつ",
+    "permissions": ["activeTab", "storage", "tabs"],
+    "icons": {
+        "16": "YTSAN.png",
+        "48": "YTSAN.png",
+        "128": "YTSAN.png"
+      },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "YTSAN.png",
+        "48": "YTSAN.png",
+        "128": "YTSAN.png"
+      }
+    }
+  }
+  
